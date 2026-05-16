@@ -61,3 +61,19 @@ raw LaTeX into the table; now a clean expression with proper
 Meaning/Prediction columns.
 Removed the empty placeholder table in §7.3 (rendered as empty boxes).
 Title block marked "Concise Edition — Revised (Path A)".
+
+# Holonomic Quantum Research Group (HQRG)
+
+**Working repository for the *Holonomic Quantum Manifesto*** and the formal development of **Holonomic Quantum Reality (HQR)**.
+
+## Current Stance: Path A
+
+This project is committed to **Path A**:
+
+> ρ^ent is treated as a **fundamental phenomenological scalar field** on the 11-dimensional manifold.  
+> The label “entanglement density” is **interpretive motivation only** — it is not derived from von Neumann entanglement entropy of a quantum state and bipartition.
+
+All formal mathematical work follows this definition. Stronger ontological claims (geometry emerging directly from entanglement, applications to consciousness, etc.) are clearly separated as exploratory interpretation.
+
+## Repository Structure
+
