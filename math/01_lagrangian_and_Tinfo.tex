@@ -13,48 +13,103 @@
 \maketitle
 
 \begin{abstract}
-We present the 11-dimensional Lagrangian of Holonomic Quantum Reality under the Path A commitment, in which \(\rho^{\rm ent}\) is treated as a fundamental phenomenological scalar field. We derive the quantum informational stress-energy tensor \(T^{\rm info}_{AB}\) and demonstrate explicit dimensional reduction on a flat 7-torus.
+We present the 11-dimensional Lagrangian of Holonomic Quantum Reality under the
+Path A commitment, in which \(\rho^{\rm ent}\) is treated as a fundamental
+phenomenological scalar field. We fix an explicit metric signature, derive the
+quantum informational stress-energy tensor \(T^{\rm info}_{AB}\) with internally
+consistent kinetic and potential signs, and demonstrate explicit dimensional
+reduction on a flat 7-torus. We also state precisely why the torus reduction is
+a consistency check rather than a distinctive prediction.
 \end{abstract}
 
 \section{Path A Commitment}
 
-In this formulation, \(\rho^{\rm ent}\) is a fundamental scalar field on the 11D manifold. The name ``entanglement density'' is interpretive and does not imply that \(\rho^{\rm ent}\) is derived from the von Neumann entropy of a reduced density matrix.
+In this formulation, \(\rho^{\rm ent}\) is a fundamental scalar field on the 11D
+manifold. The name ``entanglement density'' is interpretive and does not imply
+that \(\rho^{\rm ent}\) is derived from the von Neumann entropy of a reduced
+density matrix.
+
+\section{Conventions}
+
+\textbf{Metric signature.} We use the mostly-plus convention
+\((-,+,+,\dots,+)\) in \(D=11\). With this signature, a healthy (non-ghost)
+scalar enters the Lagrangian with a \emph{negative} kinetic term and a
+\emph{negative} potential:
+\[
+\mathcal{L}_{\rm scalar}
+= -\tfrac{\beta}{2}\, g^{AB}\nabla_A\rho\,\nabla_B\rho \;-\; V(\rho),
+\qquad \beta>0,
+\]
+so that, for a slowly varying field, \(\mathcal{L}_{\rm scalar}\to -V(\rho)\)
+and the energy density is \(+V(\rho)\) (bounded below for \(V\ge 0\)). Fixing
+this convention here is essential: the relative sign between the
+gradient-squared and potential pieces of \(T^{\rm info}_{AB}\) is what
+determines whether the informational sector behaves as dark energy or as
+ordinary matter after reduction, and an inconsistent choice flips the physical
+prediction.
 
 \section{The 11D Lagrangian}
 
 The Lagrangian density is
 \begin{equation}
-\mathcal{L}_{\rm HQR} = \frac{R^{(11)}}{16\pi G_{11}} 
-+ \alpha \, \rho \, R^{(11)} 
-+ \frac{\beta}{2} g^{AB} \nabla_A \rho \, \nabla_B \rho 
-+ \gamma \, V(\rho) 
+\mathcal{L}_{\rm HQR} = \frac{R^{(11)}}{16\pi G_{11}}
++ \alpha \, \rho \, R^{(11)}
+- \frac{\beta}{2} g^{AB} \nabla_A \rho \, \nabla_B \rho
+- \gamma \, V(\rho)
 + \mathcal{L}_{\rm hidden},
 \end{equation}
-where \(\rho = \rho^{\rm ent}\).
+where \(\rho = \rho^{\rm ent}\), \(\beta>0\), and \(\gamma>0\). Note the signs:
+the kinetic and potential terms enter with the \emph{same} (negative) sign
+demanded by the mostly-plus convention of Section~2. (This corrects an earlier
+draft in which both appeared with a leading \(+\), which is either a ghost or a
+sign error.)
 
 The hidden-order sector includes topological contributions:
 \begin{equation}
-\mathcal{L}_{\rm hidden} = \frac{\kappa}{3!} C \wedge dC \wedge dC 
+\mathcal{L}_{\rm hidden} = \frac{\kappa}{3!} C \wedge dC \wedge dC
 + \lambda \, \rho \, \operatorname{Tr}(R \wedge R \wedge R \wedge R \wedge R)
 + \theta(\rho) \, \operatorname{CS}_5(F).
 \end{equation}
+These are topological/boundary terms: they are metric-independent (or
+total-derivative) and therefore do not contribute to the local metric variation
+that defines \(T^{\rm info}_{AB}\); they instead affect the \(\rho\) equation of
+motion and global selection rules. This is stated explicitly so that no
+spurious local stress-energy is attributed to them downstream.
 
 \section{Derivation of \( T^{\rm info}_{AB} \)}
 
-Define \( f = \frac{1}{16\pi G_{11}} + \alpha \rho \). Variation of the action with respect to the metric yields the modified Einstein equation
+Define \( f = \dfrac{1}{16\pi G_{11}} + \alpha \rho \). Varying the action with
+respect to the metric (mostly-plus) yields the modified Einstein equation
 \begin{equation}
-f \big( R_{AB} - \tfrac12 R g_{AB} \big) - \big( \nabla_A \nabla_B - g_{AB} \square \big)(\alpha \rho) 
-= 8\pi G_{11} \, T_{AB}^{\rm (kin+pot + matter + hidden)}.
+f \big( R_{AB} - \tfrac12 R g_{AB} \big)
+- \big( \nabla_A \nabla_B - g_{AB} \square \big)(\alpha \rho)
+= 8\pi G_{11} \, T_{AB}^{\rm (kin+pot+matter)} .
 \end{equation}
-
-Rearrangement into standard form gives the effective informational stress-energy tensor
+Collecting terms into standard form gives the effective informational
+stress-energy tensor
 \begin{equation}
-T_{AB}^{\rm info} = \frac{1}{f} \Bigg[ 
-\beta \Big( \nabla_A \rho \, \nabla_B \rho - \tfrac12 g_{AB} |\nabla\rho|^2 \Big) 
-+ g_{AB} \, \gamma V(\rho) 
-+ \frac{\alpha}{8\pi G_{11}} \big( \nabla_A \nabla_B \rho - g_{AB} \square \rho \big) 
+T_{AB}^{\rm info} = \frac{1}{f} \Bigg[
+\beta \Big( \nabla_A \rho \, \nabla_B \rho - \tfrac12 g_{AB} |\nabla\rho|^2 \Big)
+\;-\; g_{AB}\, \gamma\, V(\rho)
+\;+\; \frac{\alpha}{8\pi G_{11}} \big( \nabla_A \nabla_B \rho - g_{AB} \square \rho \big)
 \Bigg].
 \end{equation}
+
+\paragraph{Sign check (the load-bearing point).}
+With the mostly-plus convention of Section~2, the variation of
+\(-\tfrac{\beta}{2}(\nabla\rho)^2\) produces the
+\(\beta(\nabla_A\rho\nabla_B\rho - \tfrac12 g_{AB}|\nabla\rho|^2)\) structure
+above, and the variation of \(-\gamma V(\rho)\) produces
+\(-g_{AB}\,\gamma V(\rho)\). The gradient-squared and potential pieces therefore
+carry \emph{opposite} relative signs (the gradient piece \(+\), the potential
+piece \(-g_{AB}\)). This differs from the earlier draft, which wrote the
+potential as \(+g_{AB}\gamma V(\rho)\) --- inconsistent with a Lagrangian in
+which the kinetic and potential signs are not independently chosen. The
+corrected form is required for the \(00\)-component to give a positive energy
+density \(\propto +\gamma V(\rho)\) for \(V\ge 0\), and it is this sign that
+later fixes whether the informational sector accelerates or decelerates the
+effective 4D expansion. Any downstream cosmological or condensed-matter estimate
+must use this corrected sign.
 
 \section{Explicit Reduction on Flat \( T^7 \)}
 
@@ -62,21 +117,48 @@ Consider the product metric ansatz
 \[
 ds_{11}^2 = g_{\mu\nu}(x)\, dx^\mu dx^\nu + \delta_{mn}\, dy^m dy^n
 \]
-on \( M^4 \times T^7 \), with \(\rho = \rho_0(x)\) independent of the internal coordinates.
+on \( M^4 \times T^7 \), with \(\rho = \rho_0(x)\) independent of the internal
+coordinates.
 
-The internal derivatives vanish, and the reduction of the non-minimal contribution to the effective 4D energy density is
+The internal derivatives vanish, and the reduction of the non-minimal
+contribution to the effective 4D energy density is
 \[
 T_{00}^{(4)}(x) = C \big( \nabla_0 \nabla_0 \rho_0 - g_{00} \square_4 \rho_0 \big),
 \]
-where \( C \) is a constant set by \(\alpha\) and \( G_{11}\). The volume factors cancel exactly, yielding a finite, definite 4D expression.
+where \( C \) is a constant set by \(\alpha\) and \( G_{11}\). The volume
+factors cancel exactly, yielding a finite, definite 4D expression.
 
-This demonstrates that the reduction procedure is well-defined and calculable once the compactification ansatz and profile of \(\rho\) are specified.
+\paragraph{What this does and does not establish.}
+This demonstrates that the reduction \emph{procedure} is well-defined and
+calculable once the compactification ansatz and the profile of \(\rho\) are
+specified --- i.e. it is a consistency check on the machinery. It does
+\textbf{not} constitute a distinctive HQR prediction. On a flat \(T^7\) with a
+zero-mode profile, the surviving 4D structure is degenerate with that of an
+ordinary non-minimally coupled modulus (a generic scalar--tensor / Brans--Dicke
+theory). Nothing in this reduced expression distinguishes HQR from that generic
+case. A distinctive prediction requires a \emph{structured} internal manifold
+(warped product, non-trivial flux, or a \(G_2\)/Calabi--Yau geometry) in which
+the topological hidden-order terms and the internal curvature feed back into the
+4D effective theory. The torus is therefore a stress test of consistency only,
+and any prediction extracted at this level (including for URu\(_2\)Si\(_2\))
+would not be a test of HQR specifically.
 
 \section{Notes}
 
 \begin{itemize}
-    \item The torus example serves as a minimal consistency check. More realistic compactifications (warped products, fluxes, \(G_2\) or Calabi-Yau manifolds) follow the same structural procedure but involve additional technical steps.
-    \item Topological terms in \(\mathcal{L}_{\rm hidden}\) primarily affect the dynamics of \(\rho\) and global selection rules rather than contributing directly to the local stress-energy tensor.
+    \item The torus example is a minimal consistency check, not a physical
+          prediction (see the paragraph above). More realistic compactifications
+          (warped products, fluxes, \(G_2\) or Calabi--Yau manifolds) follow the
+          same structural procedure but involve additional technical steps and
+          are the only route to a distinctive signature.
+    \item Topological terms in \(\mathcal{L}_{\rm hidden}\) are
+          metric-independent/total-derivative and primarily affect the dynamics
+          of \(\rho\) and global selection rules; they do not contribute
+          directly to the local stress-energy tensor.
+    \item \textbf{Open:} the dynamics/stabilisation of \(\rho\) (its equation of
+          motion plus the topological selection rules) still has to fix which
+          profile \(\rho_0(x)\) is realised. Until that is done, \(\rho_0\)
+          remains free and no numerical prediction is fixed.
 \end{itemize}
 
 \end{document}
