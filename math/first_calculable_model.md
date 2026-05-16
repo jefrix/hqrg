@@ -1,100 +1,96 @@
-# First Calculable Model: URu₂Si₂ Hidden Order
+# First Calculable Model: Corrections to the Hidden-Order Transition in URu₂Si₂ (Path A)
 
-**Goal**: Identify the first concrete, potentially falsifiable signature of the Path A framework by applying it to a real condensed-matter system with a well-characterized hidden-order phase.
+**Goal**: Extract one concrete, potentially falsifiable correction from the Path A framework by applying it to the hidden-order transition in URu₂Si₂.
 
-## Path A Framing (Reminder)
+## Path A Framing
 
-Under Path A, ρ^ent is a fundamental phenomenological scalar field on the 11D manifold. It is **not** derived from von Neumann entanglement entropy. The coupling of this field (and the associated hidden-order topological terms) to curvature and to matter fields is what generates observable effects.
+This document operates strictly within **Path A**: ρ^ent is treated as a **fundamental phenomenological scalar field** on the 11-dimensional manifold. It is **not** derived from the von Neumann entanglement entropy of any quantum state or bipartition. The name “entanglement density” is used for interpretive convenience only.
 
-All calculations below are performed within this effective scalar-tensor + topological framework.
+All calculations are performed within an effective 11D scalar-tensor theory with topological terms. No claim is made that geometry emerges from entanglement or that this constitutes a complete unification of quantum mechanics and gravity.
+
+## Metric Signature and Lagrangian
+
+We work in the **mostly-plus metric signature** \((+,-,-,-)\).
+
+The 11D Lagrangian takes the form
+
+\[
+\mathcal{L}_{\rm HQR} = \frac{R^{(11)}}{16\pi G_{11}} 
++ \alpha \rho R^{(11)} 
+- \frac{\beta}{2} g^{AB} \partial_A \rho \partial_B \rho 
+- \gamma V(\rho) 
++ \mathcal{L}_{\rm hidden},
+\]
+
+where the signs are chosen for consistency with a healthy scalar field. The derived informational stress-energy tensor \(T_{AB}^{\rm info}\) is consistent with this Lagrangian (see `01_lagrangian_and_Tinfo.tex`).
 
 ## Why URu₂Si₂?
 
-URu₂Si₂ undergoes a well-studied hidden-order (HO) transition at T_HO ≈ 17.5 K. The order parameter is still not fully identified experimentally, and the transition shows signatures that are difficult to explain with conventional magnetic or structural order.
+URu₂Si₂ exhibits a well-characterized but microscopically unidentified “hidden order” transition at \(T_{\rm HO} \approx 17.5\) K. High-precision thermodynamic and transport data exist across the transition. Because the order parameter remains debated, there is still room for an additional scalar degree of freedom to influence the transition without immediate contradiction with existing observations.
 
-This makes it a natural first target because:
-- It is a real, high-quality material with extensive experimental data.
-- The “hidden” character of the order resonates with the topological/hidden-order sector in the HQR Lagrangian.
-- The transition temperature is low enough that small corrections from higher-dimensional physics could be detectable in principle.
-- Multiple thermodynamic and transport quantities have been measured with high precision across the transition.
+This makes URu₂Si₂ one of the cleanest near-term targets for testing whether the informational sector produces observable corrections in a real material.
 
-## Coupling Mechanism (Path A)
+## Compactification Requirement
 
-In the 11D theory, the relevant couplings are:
+**Critical point**: Any calculable prediction must use a **structured compactification** (warped product with non-trivial internal curvature or fluxes). 
 
-1. Non-minimal coupling of ρ^ent to curvature (α ρ R term).
-2. Kinetic and potential terms for ρ^ent.
-3. Topological hidden-order terms in ℒ_hidden (Chern-Simons and curvature invariants coupled to ρ).
-
-When reduced to 4D, these can generate:
-- Effective corrections to the stress-energy tensor felt by the electrons and lattice in URu₂Si₂.
-- Modifications to the effective potential or Landau free energy of the hidden-order parameter.
-- Possible coupling between the informational scalar and the order parameter through the topological terms.
-
-Under Path A we do **not** claim that the hidden order *is* entanglement. Instead, we treat the hidden-order transition as being influenced by an additional scalar degree of freedom (ρ^ent) whose dynamics are governed by the 11D action.
+A flat \(T^7\) reduction with a y-independent zero mode for ρ is degenerate with ordinary non-minimally coupled scalar-tensor gravity (Brans–Dicke type). Any shift \(\delta T_{\rm HO}\) obtained from such a reduction would not be distinctive to HQR. Therefore, step 1 below requires a warped or fluxed internal geometry in which the topological terms and internal curvature can generate effects beyond generic scalar-tensor theory.
 
 ## Target Observable
 
-**Primary target**: A shift or modification in the hidden-order transition temperature T_HO, or in thermodynamic quantities across the transition (specific heat jump, entropy release, susceptibility).
+**Primary target**: A shift \(\delta T_{\rm HO}\) in the hidden-order transition temperature, or a modification to the magnitude of the specific-heat jump and entropy release across the transition.
 
-Secondary targets could include:
-- Anomalous transport properties below T_HO.
-- Possible weak effects in elastic constants or ultrasound attenuation.
+Secondary targets include possible effects in transport or elastic properties below \(T_{\rm HO}\).
 
-The cleanest near-term goal is to estimate whether the informational sector produces a **detectable correction** to T_HO or to the size of the specific-heat anomaly, given reasonable assumptions about the coupling strengths.
+## Calculation Roadmap
 
-## Schematic Calculation Roadmap
+To produce a concrete result, the following steps are required:
 
-To move from qualitative to quantitative, the following steps are required:
+1. **Structured Dimensional Reduction**  
+   Choose a specific warped-product or flux compactification ansatz. Perform the reduction of the informational sector (kinetic, non-minimal, and topological terms) to obtain the effective 4D contributions to the stress-energy tensor and to the effective potential felt by matter fields.
 
-1. **Effective 4D description**  
-   Perform the dimensional reduction of the 11D action (including the topological terms) to obtain an effective 4D Lagrangian containing ρ^ent coupled to the electrons and lattice of URu₂Si₂.  
-   **Important (see `01_lagrangian_and_Tinfo.tex`, §"Explicit Reduction"):** the flat-\(T^7\) reduction is a consistency check only. On a flat torus with a zero-mode profile, the surviving 4D structure is degenerate with an ordinary non-minimally coupled modulus (generic scalar–tensor / Brans–Dicke gravity), so any δT_HO extracted at that level would be a prediction of generic scalar–tensor gravity, **not a distinctive test of HQR**. Step 1 must therefore use a *structured* internal geometry (warped product, non-trivial flux, or a \(G_2\)/Calabi–Yau manifold) in which the topological hidden-order terms and internal curvature actually feed back into the 4D effective theory. Until that structured reduction is done, steps 3–5 below cannot yield an HQR-specific number.  
-   **Sign caveat:** all energy-density and free-energy estimates downstream must use the corrected \(T^{\rm info}_{AB}\) (mostly-plus signature; potential term enters as \(-g_{AB}\gamma V(\rho)\), not \(+g_{AB}\gamma V(\rho)\)). The sign of the potential term controls whether the informational sector adds to or subtracts from the effective free energy of the order parameter, and therefore the sign of δT_HO. See COLLAB_LOG Entry 006.
+2. **Coupling to the Hidden-Order Parameter**  
+   Introduce a minimal phenomenological coupling between the reduced informational field and the hidden-order parameter ψ (e.g., terms of the form \(\lambda \rho_{\rm eff} |\psi|^2\)). The topological sector in \(\mathcal{L}_{\rm hidden}\) may generate additional selection rules.
 
-2. **Coupling to the order parameter**  
-   Introduce a phenomenological coupling between ρ^ent and the hidden-order parameter ψ (e.g., terms like λ ρ |ψ|² or derivative couplings). The topological terms in ℒ_hidden may generate additional selection rules or preferred values for the order parameter.
-
-3. **Mean-field or Landau analysis**  
-   Minimize the effective free energy with respect to both ψ and ρ^ent (or integrate out ρ^ent) to obtain a correction to the transition temperature:
+3. **Effective Free Energy and Transition Temperature**  
+   Construct the effective Landau free energy including both conventional hidden-order terms and the new contributions from the informational sector. Minimize with respect to the order parameter to obtain
    \[
-   T_{\rm HO}^{\rm eff} = T_{\rm HO}^{(0)} + \delta T(\alpha, \beta, \gamma, \kappa, \lambda, \dots)
+   T_{\rm HO}^{\rm eff} = T_{\rm HO}^{(0)} + \delta T(\text{couplings}).
    \]
 
-4. **Estimate of magnitude**  
-   Use known experimental constraints on the size of the specific-heat jump and entropy release to bound the allowed values of the coupling constants. Then compute the expected size of δT or the modification to the specific-heat anomaly.
+4. **Parameter Constraints from Experiment**  
+   Use existing high-precision data on the specific-heat jump, entropy release, and transition width in URu₂Si₂ to place bounds on the new coupling constants.
 
-5. **Comparison with experiment**  
-   Check whether the predicted correction lies within current experimental resolution or could be tested with higher-precision measurements.
-
-At present, only steps 1–2 have a clear formal structure. Steps 3–5 require concrete choices for the coupling constants and a controlled approximation scheme.
+5. **Numerical Estimate and Comparison**  
+   Compute the expected size of \(\delta T_{\rm HO}\) (or modification to the specific-heat anomaly) within the allowed parameter range and compare with current experimental resolution.
 
 ## Current Status
 
-- The general mechanism (non-minimal coupling + topological terms affecting an order parameter) is well-defined within Path A.
-- No numerical prediction for δT_HO or the specific-heat modification yet exists.
-- The main missing ingredients are:
-  - A controlled reduction **on a structured internal geometry** (not flat \(T^7\)) that includes the relevant matter fields of URu₂Si₂. The flat-torus reduction is degenerate with generic scalar–tensor gravity and cannot yield an HQR-specific result.
-  - A justified form for the coupling between ρ^ent and the hidden-order parameter.
-  - Estimates or bounds on the new coupling constants.
-  - Use of the **sign-corrected** \(T^{\rm info}_{AB}\) (mostly-plus signature; see `01_lagrangian_and_Tinfo.tex` and COLLAB_LOG Entry 006). The earlier draft's potential sign was inconsistent and would flip the sign of any δT_HO estimate.
+- The general mechanism is well-defined within Path A.
+- The corrected form of \(T^{\rm info}_{AB}\) (with consistent signs under the mostly-plus signature) is available in `01_lagrangian_and_Tinfo.tex`.
+- No numerical value for \(\delta T_{\rm HO}\) or the specific-heat modification has yet been computed.
+- The main missing pieces are:
+  - An explicit structured (warped/fluxed) reduction.
+  - A controlled form for the coupling between ρ^ent and the hidden-order parameter.
+  - Quantitative bounds on the new couplings from URu₂Si₂ data.
 
-## Next Steps (Priority Order)
+## Next Steps (Priority)
 
-1. Develop a minimal effective 4D model coupling ρ^ent to a generic complex order parameter ψ (mean-field treatment).
-2. Include the leading effect of the topological hidden-order terms on the effective potential for ψ.
-3. Perform a first estimate of the shift in transition temperature as a function of the new couplings.
-4. Compare the predicted size of the effect against existing experimental precision on T_HO and thermodynamic quantities in URu₂Si₂.
-5. Identify which combination of couplings could produce an observable signature while remaining consistent with other constraints.
+1. Specify a minimal structured compactification ansatz and carry out the reduction of the informational sector.
+2. Introduce and justify a coupling between the reduced informational field and a model hidden-order parameter.
+3. Perform a first mean-field estimate of the shift in transition temperature.
+4. Use experimental constraints to bound the couplings and estimate the size of the effect.
+5. Compare the predicted correction with existing data and conventional explanations.
 
-## Discussion
+## Discussion and Limitations
 
-URu₂Si₂ offers one of the cleanest near-term opportunities to turn the Path A framework into a concrete, testable prediction. Because the hidden-order parameter itself remains unidentified, there is still room for an additional scalar degree of freedom to play a role without immediately contradicting existing data.
+This calculation aims to demonstrate that the Path A framework can produce falsifiable corrections to observables in real materials. Success would show that the model has predictive content beyond generic scalar-tensor gravity. Failure (or very small effects within allowed parameter ranges) would instead constrain the size of the new couplings.
 
-Success here would not prove that ρ^ent is “entanglement,” but it would demonstrate that the formal model can produce falsifiable corrections to real condensed-matter systems. Failure to find any effect within reasonable coupling ranges would instead constrain the size of the new couplings.
+**Important limitations**:
+- The coupling between ρ^ent and the hidden-order parameter is currently phenomenological.
+- A fully realistic compactification (e.g., involving a specific \(G_2\) or Calabi-Yau manifold with fluxes) remains future work.
+- No claim is made that this constitutes evidence that “entanglement sources gravity.”
 
-This calculation is therefore both a scientific target and a stress test of whether the Path A framework can move beyond formal consistency into genuine predictive power.
+This document is therefore both a scientific target and a technical stress test of whether the Path A formulation can move from formal consistency to genuine, distinctive predictions.
 
----
-
-**Status**: Draft — open for refinement and calculation.
+**Status**: Draft — open for calculation and refinement.
