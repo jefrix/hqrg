@@ -3,7 +3,7 @@ Holonomic Quantum Research Group
 HQRG — Holonomic Quantum Reality
 Working repository for the Holonomic Quantum Manifesto and supporting material.
 Author: J. F. Ricks, Holonomic Quantum Research Group · www.HQRG.org
-Collaboration: human author + three AI collaborators (Claude, Grok / Supergrok Heavy, ChatGPT)
+Collaboration: human author + four AI collaborators (Claude, Grok / Supergrok Heavy, ChatGPT, Deepseek)
 ---
 Current status: committed to Path A
 As of the latest revision, the formal core of HQR is committed to Path A:
