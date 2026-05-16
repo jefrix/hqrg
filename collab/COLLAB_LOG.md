@@ -12,6 +12,128 @@ those are the ones that erode silently.
 Before proposing anything that touches the formal core, read the most recent
 "STATUS" entry and `STATUS_AND_NOTATION.md`.
 ---
+---
+2026-05-16 — Entry 007 — Added discuss.md - also URu₂Si₂ first calculable model corrected: phenomenological sensitivity vs fifth-force suppression
+Proposed by: ChatGPT; reviewed against Grok and DeepSeek derivations; author accepted ChatGPT framing after cross-model comparison.
+
+Context:
+The first calculable Path A model, `math/first_calculable_model.md`, attempted to bound a possible scalar-induced shift in the URu₂Si₂ hidden-order transition temperature \(T_{\rm HO}\). Earlier drafts and Grok's version treated a rough
+\[
+|\delta T_{\rm HO}| \lesssim 50\,{\rm mK}
+\]
+estimate as though it could be justified by published fifth-force/equivalence-principle limits plus conservative assumptions about \(\lambda_{\phi\psi}\) and \(\langle\phi\rangle\).
+
+Issue caught:
+ChatGPT identified the central logical gap: fifth-force experiments constrain scalar coupling to ordinary matter, while the Landau shift in the URu₂Si₂ model depends on the hidden-order-sector product
+\[
+\lambda_{\phi\psi}\langle\phi\rangle.
+\]
+These are not the same coupling unless HQR supplies a matching relation between ordinary matter coupling and hidden-order coupling.
+
+Resolution:
+Adopt ChatGPT's corrected framing. The model must clearly separate:
+
+\[
+\text{Landau shift}
+\neq
+\text{URu₂Si₂ phenomenological sensitivity}
+\neq
+\text{fifth-force/equivalence-principle bound}.
+\]
+
+The Landau shift remains:
+
+\[
+\delta T_{\rm HO}
+=
+-\frac{\lambda_{\phi\psi}\langle\phi\rangle}{a}.
+\]
+
+Therefore URu₂Si₂ data directly constrain only:
+
+\[
+\frac{\lambda_{\phi\psi}\langle\phi\rangle}{a}.
+\]
+
+They do not separately determine \(\lambda_{\phi\psi}\), \(\langle\phi\rangle\), or the ordinary fifth-force coupling \(\alpha_4\).
+
+Corrected bounds:
+1. Phenomenological URu₂Si₂ sensitivity scale:
+
+\[
+|\delta T_{\rm HO}|_{\rm phen}
+\lesssim
+10\text{--}50\,{\rm mK}.
+\]
+
+This is a material/experimental sensitivity target, not a fifth-force bound.
+
+2. Fifth-force bound under the special assumption of a universal, unscreened, long-range scalar whose coupling to the hidden-order sector tracks ordinary matter coupling:
+
+\[
+\frac{\delta T_{\rm HO}}{T_{\rm HO}}
+\lesssim
+\alpha_\phi\frac{\Phi_\oplus}{c^2}.
+\]
+
+Using
+
+\[
+T_{\rm HO}\approx17.5\,{\rm K},
+\qquad
+\frac{\Phi_\oplus}{c^2}\approx7\times10^{-10},
+\qquad
+\alpha_\phi\lesssim10^{-11},
+\]
+
+gives
+
+\[
+|\delta T_{\rm HO}|_{\rm fifth-force}
+\lesssim
+1.2\times10^{-19}\,{\rm K}.
+\]
+
+Even a looser direct equivalence-principle scale,
+\[
+\eta\sim2.7\times10^{-15},
+\]
+gives only
+\[
+|\delta T_{\rm HO}|
+\lesssim
+4.7\times10^{-14}\,{\rm K}.
+\]
+
+Interpretation:
+A detectable millikelvin-scale shift in URu₂Si₂ cannot come from a standard unscreened long-range fifth-force scalar obeying existing equivalence-principle bounds. If HQR predicts an observable URu₂Si₂ signal, it must arise through one or more non-generic mechanisms:
+
+1. screening,
+2. material-sector-specific coupling,
+3. topological hidden-order coupling,
+4. correlated observables rather than a simple absolute \(T_{\rm HO}\) shift.
+
+Specific files prepared for repo push:
+- `math/first_calculable_model.md`
+- `math/corrected_bound_URu2Si2.md`
+- `collab/decision_log_URu2Si2_bound.md`
+- `README_FIRST_MODEL_SNIPPET.md`
+
+Manuscript language to avoid:
+> Current fifth-force constraints allow \(|\delta T_{\rm HO}|\lesssim50\,{\rm mK}\).
+
+Replacement language:
+> URu₂Si₂ thermodynamics provide a phenomenological mK-scale sensitivity target, but ordinary fifth-force constraints suppress any universal unscreened scalar contribution to far below detectability.
+
+Status after this entry:
+Path A still holds. The first calculable model is now more conservative and more falsifiable. The key result is not a predicted \(50\,{\rm mK}\) shift; the key result is that ordinary fifth-force physics is too constrained, so any observable HQR signal must be screened, material-specific, topological, or correlated.
+
+Next recommended model:
+`math/material_specific_screening_model.md`
+
+Goal:
+derive whether a screened, topological, or material-specific HQR scalar coupling can affect URu₂Si₂ hidden-order observables without violating fifth-force/equivalence-principle bounds.
+
 2026-05-16 — Entry 004 — ChatGPT formal-backbone draft integrated (with framing corrections)
 Proposed by: ChatGPT (full candidate effective action, term interpretation,
 informational stress tensor, four-form, projection to 4D, master-chain mapping).
