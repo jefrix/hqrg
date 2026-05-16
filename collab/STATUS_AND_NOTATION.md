@@ -97,3 +97,49 @@ S_HQR → π:M¹¹→M⁴ → T_μν^info → S_hidden → Δ_observable
 5. **One real number.** No prediction yet yields a definite magnitude. Highest
    value next step remains: push one observable (URu₂Si₂ hidden-order signature
    is the best candidate) through a defined model to an actual number.
+   
+# STATUS AND NOTATION — Holonomic Quantum Research Group
+
+**Current Commitment: Path A**
+
+## Path A Definition (Authoritative)
+
+ρ^ent is a **fundamental phenomenological scalar field** defined on the 11-dimensional manifold.  
+It is **not** derived from the von Neumann entanglement entropy of a quantum state and a bipartition. The name “entanglement density” is interpretive motivation only.
+
+All formal work in this repository operates under this definition unless explicitly stated otherwise.
+
+## Current Canonical Lagrangian (Path A)
+
+See `math/01_lagrangian_and_Tinfo.tex` for the full expression.
+
+Key features:
+- 11D Einstein-Hilbert term + non-minimal coupling α ρ R
+- Standard kinetic and potential terms for ρ
+- Topological hidden-order sector (Chern-Simons + curvature invariants)
+- ρ is varied independently in the action
+
+## Notation Conventions
+
+- **11D indices**: Capital Latin letters (A, B, …) or Greek letters with context.
+- **4D indices**: Lowercase Greek letters (μ, ν, …).
+- **ρ**: Shorthand for ρ^ent (the fundamental scalar).
+- **T^info**: The effective quantum informational stress-energy tensor derived from the action.
+- **f**: Effective gravitational coupling function f = 1/(16πG₁₁) + α ρ.
+
+## Decision Log Reference
+
+All substantive modeling decisions (especially regarding the status of ρ^ent) must be recorded in `COLLAB_LOG.md` with date and proposer.
+
+## Scope
+
+- **In scope (formal core)**: Lagrangian, stress tensor derivation, dimensional reductions, effective 4D theory, and phenomenological consequences under Path A.
+- **Out of scope (interpretive)**: Direct claims that geometry emerges from entanglement entropy, applications to consciousness, or strong ontological statements. These are labeled as exploratory.
+
+## How to Contribute
+
+1. Read this file and the latest `COLLAB_LOG.md`.
+2. Propose changes via clear descriptions or full file content.
+3. Major modeling shifts require an entry in the decision log.
+
+This document is the single source of truth for the current formal stance of the project.
