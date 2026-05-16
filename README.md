@@ -20,15 +20,36 @@ for the conventions every collaborator should follow.
 ---
 Repository layout
 ```
+## Repository layout
+
+```text
 hqrg/
-├── README.md                  ← you are here
-├── manuscripts/               ← current manuscript files (.docx)
+├── README.md
+│   └── Project overview, Path A status, collaborator instructions, and changelog.
+│
+├── collab/
+│   ├── COLLAB_LOG.md
+│   │   └── Append-only decision log; newest entries at the top.
+│   └── STATUS_AND_NOTATION.md
+│       └── Path A definition, canonical notation, and formal-status rules.
+│
+├── manuscripts/
+│   ├── .gitkeep
 │   └── Holonomic_Quantum_Manifesto_Concise_Edition_Revised.docx
-├── media/                     ← figures / stock imagery (author-supplied)
-├── collab/                    ← shared collaboration state
-│   ├── COLLAB_LOG.md          ← decision log; append-only, newest at top
-│   └── STATUS_AND_NOTATION.md ← Path A definition + canonical notation table
-└── (math source / full edition to be added)
+│       └── Current revised concise manuscript.
+│
+├── math/
+│   ├── README.md
+│   │   └── Formal Core / Path A overview for mathematical development.
+│   ├── 01_lagrangian_and_Tinfo.tex
+│   │   └── Core 11D Lagrangian, informational stress-tensor derivation,
+│           and flat \(T^7\) reduction consistency check.
+│   └── first_calculable_model.md
+│       └── URu₂Si₂ hidden-order model and corrected scalar-bound framing.
+│
+└── media/
+    └── Author-supplied figures, generated scientific visuals, and imagery
+        intended for manuscript / website use.
 ```
 How collaborators should use this repo
 Read `collab/STATUS_AND_NOTATION.md` before editing anything. Notation and
