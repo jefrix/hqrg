@@ -48,7 +48,9 @@ The cleanest near-term goal is to estimate whether the informational sector prod
 To move from qualitative to quantitative, the following steps are required:
 
 1. **Effective 4D description**  
-   Perform the dimensional reduction of the 11D action (including the topological terms) to obtain an effective 4D Lagrangian containing ρ^ent coupled to the electrons and lattice of URu₂Si₂.
+   Perform the dimensional reduction of the 11D action (including the topological terms) to obtain an effective 4D Lagrangian containing ρ^ent coupled to the electrons and lattice of URu₂Si₂.  
+   **Important (see `01_lagrangian_and_Tinfo.tex`, §"Explicit Reduction"):** the flat-\(T^7\) reduction is a consistency check only. On a flat torus with a zero-mode profile, the surviving 4D structure is degenerate with an ordinary non-minimally coupled modulus (generic scalar–tensor / Brans–Dicke gravity), so any δT_HO extracted at that level would be a prediction of generic scalar–tensor gravity, **not a distinctive test of HQR**. Step 1 must therefore use a *structured* internal geometry (warped product, non-trivial flux, or a \(G_2\)/Calabi–Yau manifold) in which the topological hidden-order terms and internal curvature actually feed back into the 4D effective theory. Until that structured reduction is done, steps 3–5 below cannot yield an HQR-specific number.  
+   **Sign caveat:** all energy-density and free-energy estimates downstream must use the corrected \(T^{\rm info}_{AB}\) (mostly-plus signature; potential term enters as \(-g_{AB}\gamma V(\rho)\), not \(+g_{AB}\gamma V(\rho)\)). The sign of the potential term controls whether the informational sector adds to or subtracts from the effective free energy of the order parameter, and therefore the sign of δT_HO. See COLLAB_LOG Entry 006.
 
 2. **Coupling to the order parameter**  
    Introduce a phenomenological coupling between ρ^ent and the hidden-order parameter ψ (e.g., terms like λ ρ |ψ|² or derivative couplings). The topological terms in ℒ_hidden may generate additional selection rules or preferred values for the order parameter.
@@ -72,9 +74,10 @@ At present, only steps 1–2 have a clear formal structure. Steps 3–5 require 
 - The general mechanism (non-minimal coupling + topological terms affecting an order parameter) is well-defined within Path A.
 - No numerical prediction for δT_HO or the specific-heat modification yet exists.
 - The main missing ingredients are:
-  - A controlled reduction that includes the relevant matter fields of URu₂Si₂.
+  - A controlled reduction **on a structured internal geometry** (not flat \(T^7\)) that includes the relevant matter fields of URu₂Si₂. The flat-torus reduction is degenerate with generic scalar–tensor gravity and cannot yield an HQR-specific result.
   - A justified form for the coupling between ρ^ent and the hidden-order parameter.
   - Estimates or bounds on the new coupling constants.
+  - Use of the **sign-corrected** \(T^{\rm info}_{AB}\) (mostly-plus signature; see `01_lagrangian_and_Tinfo.tex` and COLLAB_LOG Entry 006). The earlier draft's potential sign was inconsistent and would flip the sign of any δT_HO estimate.
 
 ## Next Steps (Priority Order)
 
