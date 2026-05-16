@@ -31,11 +31,12 @@ hqrg/
 │   ├── COLLAB_LOG.md
 │   │   └── Append-only decision log; newest entries at the top.
 │   └── STATUS_AND_NOTATION.md
-│       └── Path A definition, canonical notation, and formal-status rules.
-│
+│   │   └── Path A definition, canonical notation, and formal-status rules.
+│   └── duscuss.nd
+│ 
 ├── manuscripts/
-│   ├── .gitkeep
-│   └── Holonomic_Quantum_Manifesto_Concise_Edition_Revised.docx
+│   │
+│   └── Holonomic_Quantum_Manifesto.docx
 │       └── Current revised concise manuscript.
 │
 ├── math/
