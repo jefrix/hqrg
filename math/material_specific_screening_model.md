@@ -1,0 +1,391 @@
+# Material-Specific Screening and Topological Coupling in URu₂Si₂
+
+**Status:** first-pass Path A derivation  
+**Lane chosen by:** ChatGPT  
+**Purpose:** test whether the Path A scalar can produce a correlated URu₂Si₂ hidden-order response without behaving like an excluded universal fifth-force scalar.
+
+---
+
+## 1. Motivation
+
+The first calculable model established a useful negative result:
+
+\[
+|\delta T_{\rm HO}|_{\rm fifth-force}
+\ll 1\,{\rm mK}
+\]
+
+for any ordinary unscreened long-range scalar whose coupling to the hidden-order sector tracks its coupling to ordinary matter.
+
+Therefore, a detectable HQR-relevant signal in URu₂Si₂ cannot be a generic universal fifth-force effect. It must instead be one of the following:
+
+1. screened,
+2. material-sector-specific,
+3. topological,
+4. or visible only as a correlated observable pattern rather than as an absolute shift of \(T_{\rm HO}\).
+
+This file develops the minimal version of that lane.
+
+---
+
+## 2. Path A Constraint
+
+We remain strictly within **Path A**.
+
+The field
+
+\[
+\phi
+\]
+
+is treated as a postulated 4D phenomenological scalar descending from the 11D scalar \(\rho^{\rm ent}\). It is interpreted as informational in the HQR framework, but it is not derived from von Neumann entanglement entropy.
+
+This model is therefore a 4D effective-field-theory testbed, not a proof of the full 11D theory.
+
+---
+
+## 3. Minimal Landau Sector
+
+Let
+
+\[
+\eta = |\psi|
+\]
+
+be the hidden-order amplitude. Near the hidden-order transition,
+
+\[
+F_{\rm HO}
+=
+\frac{1}{2}a\left(T-T_{\rm HO}^{(0)}\right)\eta^2
++
+\frac{u}{4}\eta^4.
+\]
+
+A direct scalar coupling gives
+
+\[
+F_{\phi\psi}
+=
+\lambda_{\phi\psi}^{\rm eff}\,\phi_{\rm loc}\,\eta^2.
+\]
+
+Thus the transition shift is
+
+\[
+\boxed{
+\delta T_{\rm HO}
+=
+-\frac{\lambda_{\phi\psi}^{\rm eff}\phi_{\rm loc}}{a}
+}
+\tag{1}
+\]
+
+where \(\phi_{\rm loc}\) is the scalar background inside the correlated-electron medium and \(\lambda_{\phi\psi}^{\rm eff}\) is a material effective coupling.
+
+The ordinary universal scalar case corresponds to
+
+\[
+\lambda_{\phi\psi}^{\rm eff}\phi_{\rm loc}
+\rightarrow
+\lambda_{\rm matter}\phi_{\rm Earth},
+\]
+
+which is already fifth-force suppressed. The HQR-relevant case must differ from this.
+
+---
+
+## 4. Material-Specific Effective Coupling
+
+We define
+
+\[
+\lambda_{\phi\psi}^{\rm eff}
+=
+\lambda_0\,\mathcal{S}_{\rm mat}(T,P,B,\epsilon,\chi,\Delta_{\rm HO}),
+\tag{2}
+\]
+
+where:
+
+- \(T\) is temperature,
+- \(P\) is pressure,
+- \(B\) is magnetic field,
+- \(\epsilon\) is strain,
+- \(\chi\) is susceptibility,
+- \(\Delta_{\rm HO}\) is a hidden-order gap or collective-mode scale,
+- \(\mathcal{S}_{\rm mat}\) is a material response/screening function.
+
+The transition shift becomes
+
+\[
+\delta T_{\rm HO}(P,B,\epsilon)
+=
+-\frac{\lambda_0\,\mathcal{S}_{\rm mat}(P,B,\epsilon)\,\phi_{\rm loc}}{a}.
+\tag{3}
+\]
+
+This is important: the prediction is no longer a single number. It is a correlated pattern.
+
+---
+
+## 5. Local Scalar Equation in the Material
+
+To avoid treating \(\mathcal{S}_{\rm mat}\) as a free fudge factor, define \(\phi\) through a local static response equation:
+
+\[
+\left(
+-\nabla^2 + m_{\rm eff}^2({\rm env})
+\right)\phi
+=
+J_{\rm HO}.
+\tag{4}
+\]
+
+Here the effective mass may depend on the environment:
+
+\[
+m_{\rm eff}^2({\rm env})
+=
+m_0^2
++\xi_\rho \rho_{\rm matter}
++\xi_\eta \eta^2
++\xi_\epsilon \epsilon_{ij}\epsilon^{ij}
++\xi_\chi \chi_{ij}\chi^{ij}.
+\tag{5}
+\]
+
+The hidden-order source is taken to be
+
+\[
+J_{\rm HO}
+=
+q_\eta \eta^2
++q_\epsilon \epsilon_{ij}\epsilon^{ij}
++q_\chi \chi_{ij}\chi^{ij}
++q_{\rm top}\mathcal{Q}_{\rm top}.
+\tag{6}
+\]
+
+This equation encodes the proposed evasion of fifth-force limits:
+
+\[
+J_{\rm HO}\neq \rho_{\rm matter}.
+\]
+
+Fifth-force experiments constrain scalar response to ordinary matter sources. This model instead tests a scalar response to hidden-order and correlated-electron sources.
+
+---
+
+## 6. Homogeneous Approximation
+
+In a clean uniform sample, neglect gradients:
+
+\[
+\nabla^2\phi\approx0.
+\]
+
+Then
+
+\[
+\phi_{\rm loc}
+\approx
+\frac{J_{\rm HO}}{m_{\rm eff}^2}.
+\tag{7}
+\]
+
+Substituting into Eq. (1),
+
+\[
+\boxed{
+\delta T_{\rm HO}
+\approx
+-\frac{\lambda_{\phi\psi}^{\rm eff}}{a}
+\frac{J_{\rm HO}}{m_{\rm eff}^2}
+}
+\tag{8}
+\]
+
+or explicitly,
+
+\[
+\delta T_{\rm HO}
+\approx
+-\frac{\lambda_{\phi\psi}^{\rm eff}}{a}
+\frac{
+q_\eta \eta^2
++q_\epsilon \epsilon_{ij}\epsilon^{ij}
++q_\chi \chi_{ij}\chi^{ij}
++q_{\rm top}\mathcal{Q}_{\rm top}
+}{
+m_0^2
++\xi_\rho \rho_{\rm matter}
++\xi_\eta \eta^2
++\xi_\epsilon \epsilon_{ij}\epsilon^{ij}
++\xi_\chi \chi_{ij}\chi^{ij}
+}.
+\tag{9}
+\]
+
+This is the first useful material-specific HQR ansatz.
+
+It is still phenomenological, but it is no longer just an arbitrary scalar shift. It predicts dependence on the same quantities that tune hidden order experimentally: pressure, strain, field, susceptibility, and hidden-order amplitude.
+
+---
+
+## 7. Linearized Observable Predictions
+
+For small perturbations around a reference condition,
+
+\[
+P=P_0,
+\quad
+B=0,
+\quad
+\epsilon=0,
+\quad
+T\approx T_{\rm HO},
+\]
+
+expand Eq. (3):
+
+\[
+\delta T_{\rm HO}(P,B,\epsilon)
+\approx
+\delta T_0
++A_P(P-P_0)
++A_B B^2
++A_\epsilon \epsilon
++A_{\epsilon^2}\epsilon^2
++\cdots.
+\tag{10}
+\]
+
+Time-reversal symmetry usually favors even powers of magnetic field unless the hidden-order candidate itself permits a symmetry-breaking linear term.
+
+The coefficients are not arbitrary if the model is to be useful. They should be related to the response of \(J_{\rm HO}\) and \(m_{\rm eff}\):
+
+\[
+A_X
+=
+-\frac{1}{a}
+\frac{\partial}{\partial X}
+\left(
+\lambda_{\phi\psi}^{\rm eff}\frac{J_{\rm HO}}{m_{\rm eff}^2}
+\right)_{X=X_0}.
+\tag{11}
+\]
+
+This gives a direct fitting target for published pressure, field, strain, and susceptibility data.
+
+---
+
+## 8. Falsifiability Conditions
+
+The model is falsifiable only if it satisfies all of the following.
+
+### Condition 1: Universal scalar suppression
+
+The universal component must remain below fifth-force bounds:
+
+\[
+|\delta T_{\rm HO}|_{\rm universal}
+\ll 1\,{\rm mK}.
+\tag{12}
+\]
+
+### Condition 2: Material response must be correlated
+
+If a mK-scale effect exists, it must appear as a correlated response vector, not merely as a one-off offset:
+
+\[
+\vec{\mathcal{O}}_{\rm HO}
+=
+\left(
+\delta T_{\rm HO},
+\delta\Delta C,
+\delta\Delta S,
+\delta\chi_{ab},
+\delta\chi_c,
+\delta\omega_{\rm neutron},
+\delta T_{\rm HO}(P,B,\epsilon)
+\right).
+\tag{13}
+\]
+
+### Condition 3: Source terms must respect material symmetry
+
+Candidate source terms in \(J_{\rm HO}\) must transform as allowed scalar invariants under the relevant crystal symmetry and hidden-order symmetry.
+
+### Condition 4: No arbitrary absorption into \(\mathcal{S}_{\rm mat}\)
+
+The function \(\mathcal{S}_{\rm mat}\) cannot be used as an arbitrary fit function. It must be constructed from measured or symmetry-defined quantities.
+
+### Condition 5: The model must fail somewhere
+
+The model should predict a constrained pattern. If experiments do not show that pattern, the URu₂Si₂ lane should be rejected as an HQR testbed.
+
+---
+
+## 9. What This Model Predicts Qualitatively
+
+If this lane is correct, then any HQR-like scalar signature in URu₂Si₂ should not show up primarily as a universal environmental shift. It should instead track hidden-order control parameters.
+
+Promising correlations:
+
+1. \(\delta T_{\rm HO}\) should vary with pressure in a way tied to the HO-to-AF boundary.
+2. \(\delta T_{\rm HO}\) should vary with strain if the source couples to symmetry-breaking lattice channels.
+3. Specific-heat anomaly changes should correlate with susceptibility or neutron-gap changes.
+4. If \(\mathcal{Q}_{\rm top}\) is chiral, Raman or polarization-resolved probes may be more relevant than ordinary thermodynamics.
+5. Magnetic-field dependence should be even in \(B\) unless the proposed hidden-order state breaks the relevant symmetry.
+
+---
+
+## 10. Immediate Research Tasks
+
+1. Build `math/observable_vector_URu2Si2.md` listing the data streams that can constrain Eq. (13).
+2. Build `math/topological_source_terms.md` ranking possible \(\mathcal{Q}_{\rm top}\) terms.
+3. Identify the cleanest pressure/field/strain data to fit the coefficients in Eq. (10).
+4. Decide whether the first model should use:
+   - scalar hidden-order amplitude source \(q_\eta\eta^2\),
+   - strain source \(q_\epsilon\epsilon_{ij}\epsilon^{ij}\),
+   - susceptibility source \(q_\chi\chi_{ij}\chi^{ij}\),
+   - or topological source \(q_{\rm top}\mathcal{Q}_{\rm top}\).
+
+---
+
+## 11. Provisional Conclusion
+
+The next viable HQR lane is not an ordinary long-range scalar correction to \(T_{\rm HO}\). That lane is already suppressed by fifth-force bounds.
+
+The viable lane is a material-specific effective scalar response:
+
+\[
+\boxed{
+\delta T_{\rm HO}
+\approx
+-\frac{\lambda_{\phi\psi}^{\rm eff}}{a}
+\frac{J_{\rm HO}}{m_{\rm eff}^2}
+}
+\]
+
+where \(J_{\rm HO}\) is a hidden-order source rather than ordinary mass density.
+
+This model does not prove HQR. It creates a sharper question:
+
+> Can HQR specify a symmetry-respecting hidden-order source that produces a correlated observable pattern in URu₂Si₂ while remaining invisible to ordinary fifth-force tests?
+
+If yes, URu₂Si₂ becomes a serious Path A testbed.
+
+If no, URu₂Si₂ remains an analogy rather than a calculable HQR prediction.
+
+---
+
+## References to Use in the Next Pass
+
+- J. S. Kim, D. Hall, P. Kumar, and G. R. Stewart, “Specific Heat of URu₂Si₂ in Fields to 42 T: Clues to the Hidden Order,” arXiv:cond-mat/0301234.
+- H. Amitsuka et al., “Pressure-temperature phase diagram of the heavy-electron superconductor URu₂Si₂,” arXiv:cond-mat/0610139.
+- E. Hassinger et al., “Suppression of hidden order in URu₂Si₂ under pressure and restoration in magnetic field,” arXiv:0909.4188.
+- H.-H. Kung et al., “Chirality density wave of the hidden order phase in URu₂Si₂,” arXiv:1410.6398.
+- P. Touboul et al., “MICROSCOPE Mission: Final Results of the Test of the Equivalence Principle,” Physical Review Letters 129, 121102 (2022).
+- J. Bergé et al., “MICROSCOPE mission: first constraints on the violation of the weak equivalence principle by a light scalar dilaton,” arXiv:1712.00483.
