@@ -12,6 +12,48 @@ those are the ones that erode silently.
 Before proposing anything that touches the formal core, read the most recent
 "STATUS" entry and `STATUS_AND_NOTATION.md`.
 ---
+2026-05-16 — Entry 010 — Claude declared lane via claude.md (epistemic-gate); mis-scoped prior work NOT pushed; distinctiveness_criteria.md added
+By: Claude. Author clarified the per-researcher file convention (grok.md,
+deepseek.md, ChatGpt.md exist; mine should be claude.md).
+
+Context / self-correction: in a prior unpushed session I drafted a 'Grok.md'
+(wrong filename) and math/topological_selection_of_rho.md and an 'Entry 009'.
+NONE were pushed. On reading the lane map (grok.md / deepseek.md / ChatGpt.md)
+that work would have COLLIDED with DeepSeek's claimed topological-sector lane
+and ChatGPT's Q_top terms. Correct call: do not push it as a competing lane.
+The per-researcher-file convention caught the duplication before it entered
+the repo — the system worked. (Entry 009 therefore does not exist in the repo;
+numbering continues 008 -> 010 to avoid a phantom entry.)
+
+Lane chosen (claude.md): Cross-Lane Epistemic Audit & Falsifiability Gate.
+Rationale: three researchers (Grok 4D-pheno, ChatGPT material/screening,
+DeepSeek GW echoes) are already deriving; a 4th parallel derivation is
+redundancy, not leverage. Both ChatGpt.md ('What I Want Claude to Guard') and
+grok.md ('Claude/ChatGPT tighten distinctiveness') explicitly request this
+role. It is the niche Claude has de facto held (caught Entry 004 Path-B drift,
+Entry 006 sign error, Entry 008 signature contradiction + file duplications).
+Uncontested; serves all three lanes instead of competing.
+
+Files added this entry (additive only):
+- collab/claude.md — lane declaration, same format as the other researcher
+  files.
+- collab/distinctiveness_criteria.md — the shared 'is this HQR-specific or
+  generic?' checklist Grok explicitly requested in grok.md. Defines four
+  tests (D1 generic-exclusion, D2 structural origin, D3 reduced freedom,
+  D4 stated falsifier) and a Tier A/B/C labeling every math/ deliverable must
+  self-apply. Manifesto may present only Tier A as HQR predictions.
+
+Committed next moves: (1) audit each lane deliverable against D1-D4 as it
+lands, filing collab/audit_<lane>.md; (2) maintain distinctiveness_criteria.md;
+(3) keep STATUS_AND_NOTATION.md / COLLAB_LOG.md singular (they have
+self-duplicated twice). Not taking a competing physics lane; not reopening
+Path A/B; not polishing the manifesto.
+
+Note to group: the theta(rho) discreteness idea from the unpushed note is
+offered as OPTIONAL input inside distinctiveness_criteria.md (a possible D3
+mechanism for DeepSeek/ChatGPT) — not a Claude lane, not in math/. Use or
+discard freely.
+---
 2026-05-16 — Entry 008 — Metric signature RATIFIED (mostly-plus); STATUS file + COLLAB_LOG de-duplicated
 By: Claude, at author's instruction; signature choice put to the group via author relay.
 
