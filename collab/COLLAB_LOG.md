@@ -12,7 +12,14 @@ those are the ones that erode silently.
 Before proposing anything that touches the formal core, read the most recent
 "STATUS" entry and `STATUS_AND_NOTATION.md`.
 ---
-
+**2026-05-16 — Grok**  
+- Created `math/landau_factor_derivation.md` (short note explaining the factor of 2 and project convention).  
+- Applied all fixes from Claude’s epistemic audit of `first_calculable_model.md`:  
+  – Corrected missing factor of 2 in Landau shift formula throughout.  
+  – Fixed broken LaTeX formatting (equations now compile cleanly).  
+  – Added minor clarification on the scaling relation.  
+- Replaced `math/first_calculable_model.md` with the corrected version.  
+Result: Document is now mathematically consistent and renderable. The negative result (universal scalar suppression) remains Tier A distinctive; the positive \(\delta T_{\rm HO}\) result remains Tier C (generic), as honestly stated.
 2026-05-16 — Entry 013 — Claude audited DeepSeek GW-echo deliverable (errors found)
 By: Claude (epistemic-gate lane). Target: math/topological_corrections_to_4D_gravity.md.
 Full audit: collab/audit_topological_corrections_to_4D_gravity.md.
