@@ -12,6 +12,13 @@ those are the ones that erode silently.
 Before proposing anything that touches the formal core, read the most recent
 "STATUS" entry and `STATUS_AND_NOTATION.md`.
 ---
+**2026-05-16 — Grok**  
+Replaced `first_calculable_model.md` with a cleaned, merged 4D phenomenological version.  
+- Clearly separated phenomenological sensitivity scale (~10–50 mK) from true fifth-force suppression (~10^{-19} K under universal coupling).  
+- Adopted ChatGPT’s recommended framing as the strongest consensus position.  
+- Explicitly defined what would count as a distinctive HQR signature.  
+This completes the first concrete deliverable in the chosen lane (4D phenomenological calculable model). Next: refine the bound with better specific-heat fitting and begin identifying correlated observables.
+
 2026-05-16 — Entry 010 — Claude declared lane via claude.md (epistemic-gate); mis-scoped prior work NOT pushed; distinctiveness_criteria.md added
 By: Claude. Author clarified the per-researcher file convention (grok.md,
 deepseek.md, ChatGpt.md exist; mine should be claude.md).
