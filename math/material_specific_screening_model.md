@@ -1,6 +1,6 @@
 # Material-Specific Screening and Topological Coupling in URu₂Si₂
 
-**Status:** first-pass Path A derivation  
+**Status:** second-pass Path A derivation after Claude audit  
 **Lane chosen by:** ChatGPT  
 **Purpose:** test whether the Path A scalar can produce a correlated URu₂Si₂ hidden-order response without behaving like an excluded universal fifth-force scalar.
 
@@ -44,7 +44,7 @@ This model is therefore a 4D effective-field-theory testbed, not a proof of the 
 
 ---
 
-## 3. Minimal Landau Sector
+## 3. Minimal Landau Sector and Factor-of-2 Convention
 
 Let
 
@@ -62,15 +62,23 @@ F_{\rm HO}
 \frac{u}{4}\eta^4.
 \]
 
-A direct scalar coupling gives
+To remove the factor-of-2 ambiguity flagged in the audit trail, we define the scalar-order coupling with the same quadratic normalization:
 
 \[
 F_{\phi\psi}
 =
-\lambda_{\phi\psi}^{\rm eff}\,\phi_{\rm loc}\,\eta^2.
+\frac{1}{2}\lambda_{\phi\psi}^{\rm eff}\,\phi_{\rm loc}\,\eta^2.
 \]
 
-Thus the transition shift is
+Then the effective quadratic coefficient is
+
+\[
+a\left(T-T_{\rm HO}^{(0)}\right)
++
+\lambda_{\phi\psi}^{\rm eff}\phi_{\rm loc}.
+\]
+
+The transition shift is therefore
 
 \[
 \boxed{
@@ -82,6 +90,8 @@ Thus the transition shift is
 \]
 
 where \(\phi_{\rm loc}\) is the scalar background inside the correlated-electron medium and \(\lambda_{\phi\psi}^{\rm eff}\) is a material effective coupling.
+
+If another convention is used, for example \(F_{\phi\psi}=\lambda_{\phi\psi}^{\rm eff}\phi\eta^2\), then Eq. (1) becomes \(-2\lambda_{\phi\psi}^{\rm eff}\phi/a\). All files in this lane use the normalized \(1/2\) convention above.
 
 The ordinary universal scalar case corresponds to
 
@@ -161,11 +171,20 @@ The hidden-order source is taken to be
 J_{\rm HO}
 =
 q_\eta \eta^2
-+q_\epsilon \epsilon_{ij}\epsilon^{ij}
-+q_\chi \chi_{ij}\chi^{ij}
++q_v e_v
++q_\epsilon \epsilon_{ij}^{\rm dev}\epsilon_{\rm dev}^{ij}
++q_B \chi_{ij}B_iB_j
 +q_{\rm top}\mathcal{Q}_{\rm top}.
 \tag{6}
 \]
+
+where
+
+\[
+e_v={\rm Tr}(\epsilon)
+\]
+
+is the volume strain and \(\epsilon_{ij}^{\rm dev}\) is the deviatoric strain tensor.
 
 This equation encodes the proposed evasion of fifth-force limits:
 
@@ -214,8 +233,9 @@ or explicitly,
 -\frac{\lambda_{\phi\psi}^{\rm eff}}{a}
 \frac{
 q_\eta \eta^2
-+q_\epsilon \epsilon_{ij}\epsilon^{ij}
-+q_\chi \chi_{ij}\chi^{ij}
++q_v e_v
++q_\epsilon \epsilon_{ij}^{\rm dev}\epsilon_{\rm dev}^{ij}
++q_B \chi_{ij}B_iB_j
 +q_{\rm top}\mathcal{Q}_{\rm top}
 }{
 m_0^2
@@ -280,7 +300,118 @@ This gives a direct fitting target for published pressure, field, strain, and su
 
 ---
 
-## 8. Falsifiability Conditions
+## 8. Coupling-Independent Falsifier Ratios
+
+Claude's audit correctly noted that Eq. (11) is still globally rescalable unless the model produces at least one dimensionless ratio independent of \(\lambda_0\), the \(q\)'s, the \(\xi\)'s, and \(m_0\). This section supplies two minimal failable ratios. They are not universal predictions of all HQR; they are **channel tests**. If the corresponding source channel is adopted, the ratio must hold.
+
+### 8.1 Hydrostatic pressure versus volume strain
+
+Assume the leading material source is volume strain,
+
+\[
+J_{\rm HO}^{(v)}=q_v e_v,
+\qquad
+ e_v={\rm Tr}(\epsilon),
+\tag{12}
+\]
+
+and assume \(m_{\rm eff}\) and \(\lambda_{\phi\psi}^{\rm eff}\) vary slowly over the small perturbation. Define
+
+\[
+C\equiv \frac{\lambda_{\phi\psi}^{\rm eff}}{a m_{\rm eff}^2}.
+\]
+
+Then
+
+\[
+\delta T_{\rm HO}^{(v)}=-Cq_v e_v.
+\tag{13}
+\]
+
+For a hydrostatic perturbation,
+
+\[
+e_v=-\frac{P}{K},
+\tag{14}
+\]
+
+where \(K\) is the bulk modulus. Therefore
+
+\[
+A_{e_v}=-Cq_v,
+\qquad
+A_P=\frac{Cq_v}{K}.
+\tag{15}
+\]
+
+The coupling-independent ratio is
+
+\[
+\boxed{
+\mathcal{R}_{P/e}
+\equiv
+-\frac{K A_P}{A_{e_v}}
+=1.
+}
+\tag{16}
+\]
+
+This ratio is failable. If pressure and independently applied volume strain do not obey Eq. (16), the pure volume-strain source channel is rejected.
+
+For tetragonal URu₂Si₂ the practical version should use the measured elastic compliance tensor rather than an isotropic \(K\). The simple Eq. (16) is the isotropic limit; the tensor version replaces \(K^{-1}\) by the appropriate compliance combination.
+
+### 8.2 Magnetic anisotropy ratio
+
+Assume the leading magnetic source is susceptibility-mediated and time-reversal even:
+
+\[
+J_{\rm HO}^{(B)}=q_B\chi_{ij}B_iB_j.
+\tag{17}
+\]
+
+For field along the \(c\)-axis,
+
+\[
+\delta T_{\rm HO}^{(c)}=-Cq_B\chi_c B_c^2,
+\]
+
+so
+
+\[
+A_{B,c}=-Cq_B\chi_c.
+\tag{18}
+\]
+
+For field in the basal plane,
+
+\[
+A_{B,ab}=-Cq_B\chi_{ab}.
+\tag{19}
+\]
+
+The coupling-independent anisotropy ratio is
+
+\[
+\boxed{
+\mathcal{R}_B
+\equiv
+\frac{A_{B,c}}{A_{B,ab}}\frac{\chi_{ab}}{\chi_c}
+=1.
+}
+\tag{20}
+\]
+
+This ratio is also failable. If the field-orientation dependence of \(T_{\rm HO}\) does not track the susceptibility anisotropy in this way, the pure susceptibility-source channel is rejected.
+
+### 8.3 What these ratios accomplish
+
+Equations (16) and (20) close the specific D3 gap flagged in the audit. They do not prove HQR, but they convert the screening lane from a globally fittable framework into a set of channel-specific tests.
+
+A successful model must now choose a channel and accept its falsifier. The model is no longer allowed to fit arbitrary pressure, strain, and field data by freely adjusting unrelated coefficients.
+
+---
+
+## 9. Falsifiability Conditions
 
 The model is falsifiable only if it satisfies all of the following.
 
@@ -291,7 +422,7 @@ The universal component must remain below fifth-force bounds:
 \[
 |\delta T_{\rm HO}|_{\rm universal}
 \ll 1\,{\rm mK}.
-\tag{12}
+\tag{21}
 \]
 
 ### Condition 2: Material response must be correlated
@@ -310,7 +441,7 @@ If a mK-scale effect exists, it must appear as a correlated response vector, not
 \delta\omega_{\rm neutron},
 \delta T_{\rm HO}(P,B,\epsilon)
 \right).
-\tag{13}
+\tag{22}
 \]
 
 ### Condition 3: Source terms must respect material symmetry
@@ -323,11 +454,11 @@ The function \(\mathcal{S}_{\rm mat}\) cannot be used as an arbitrary fit functi
 
 ### Condition 5: The model must fail somewhere
 
-The model should predict a constrained pattern. If experiments do not show that pattern, the URu₂Si₂ lane should be rejected as an HQR testbed.
+The model must choose at least one source channel and accept the corresponding failable ratio, such as Eq. (16) or Eq. (20). Failure of the selected ratio rejects that channel as an HQR testbed mechanism.
 
 ---
 
-## 9. What This Model Predicts Qualitatively
+## 10. What This Model Predicts Qualitatively
 
 If this lane is correct, then any HQR-like scalar signature in URu₂Si₂ should not show up primarily as a universal environmental shift. It should instead track hidden-order control parameters.
 
@@ -341,20 +472,20 @@ Promising correlations:
 
 ---
 
-## 10. Immediate Research Tasks
+## 11. Immediate Research Tasks
 
-1. Build `math/observable_vector_URu2Si2.md` listing the data streams that can constrain Eq. (13).
-2. Build `math/topological_source_terms.md` ranking possible \(\mathcal{Q}_{\rm top}\) terms.
-3. Identify the cleanest pressure/field/strain data to fit the coefficients in Eq. (10).
-4. Decide whether the first model should use:
-   - scalar hidden-order amplitude source \(q_\eta\eta^2\),
-   - strain source \(q_\epsilon\epsilon_{ij}\epsilon^{ij}\),
-   - susceptibility source \(q_\chi\chi_{ij}\chi^{ij}\),
+1. Use `math/topological_source_terms.md` to choose whether \(\mathcal{Q}_{\rm top}\) is scalar, pseudoscalar, texture-based, or Berry-curvature-based.
+2. Build `math/observable_vector_URu2Si2.md` listing the data streams that can constrain Eq. (22).
+3. Identify the cleanest pressure/field/strain data to test Eq. (16) and Eq. (20).
+4. Decide whether the first fitted channel should be:
+   - volume-strain source \(q_v e_v\),
+   - susceptibility source \(q_B\chi_{ij}B_iB_j\),
+   - deviatoric strain source \(q_\epsilon\epsilon_{ij}^{\rm dev}\epsilon_{\rm dev}^{ij}\),
    - or topological source \(q_{\rm top}\mathcal{Q}_{\rm top}\).
 
 ---
 
-## 11. Provisional Conclusion
+## 12. Provisional Conclusion
 
 The next viable HQR lane is not an ordinary long-range scalar correction to \(T_{\rm HO}\). That lane is already suppressed by fifth-force bounds.
 
@@ -371,13 +502,21 @@ The viable lane is a material-specific effective scalar response:
 
 where \(J_{\rm HO}\) is a hidden-order source rather than ordinary mass density.
 
-This model does not prove HQR. It creates a sharper question:
+The Tier-A gate is now explicit: choose a channel and test its coupling-independent ratio.
 
-> Can HQR specify a symmetry-respecting hidden-order source that produces a correlated observable pattern in URu₂Si₂ while remaining invisible to ordinary fifth-force tests?
+For the volume-strain channel:
 
-If yes, URu₂Si₂ becomes a serious Path A testbed.
+\[
+\mathcal{R}_{P/e}=1.
+\]
 
-If no, URu₂Si₂ remains an analogy rather than a calculable HQR prediction.
+For the susceptibility channel:
+
+\[
+\mathcal{R}_B=1.
+\]
+
+If neither class of ratio can survive published URu₂Si₂ data, this lane should be rejected or pushed into a more specific topological source model.
 
 ---
 
