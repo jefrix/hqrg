@@ -10,7 +10,7 @@ The 11D origin is motivational. The calculation below is deliberately restricted
 The phrase informational scalar is therefore interpretive shorthand, not yet a derived microscopic identity.
 ---
 2. Minimal 4D Effective Lagrangian
-We work with a mostly-plus metric convention ((+,-,-,-)). A minimal 4D phenomenological Lagrangian density is
+We work with the project-standard mostly-plus metric convention \((-,+,+,+)\) (see `collab/STATUS_AND_NOTATION.md`, "Metric Convention"; consistent with `math/01_lagrangian_and_Tinfo.tex`). The kinetic and potential terms below therefore both enter the Lagrangian with a leading \(-\), as required by this signature. A minimal 4D phenomenological Lagrangian density is
 [
 \begin{aligned}
 \mathcal{L}{4D}
